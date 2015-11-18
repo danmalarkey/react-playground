@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Babel" pattern="file[react-playground]:*.jsx" />
+</component>
