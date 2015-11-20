@@ -3,6 +3,13 @@
 var App = React.createClass({
     displayName: "App",
 
+    getInitialState: function getInitialState() {
+        return {
+            userIsCompleted: false,
+            keyIsCompleted: false
+        };
+    },
+
     render: function render() {
 
         var OauthWrap = {
@@ -24,6 +31,14 @@ var App = React.createClass({
             boxShadow: "0 1px 3px rgba(0, 0, 0, .04)"
         };
 
+        var userInputClass = '';
+
+        if (this.state.userIsCompleted) userInputClass += 'is-completed';
+
+        var keyInputClass = '';
+
+        if (this.state.keyIsCompleted) keyInputClass += 'is-completed';
+
         return React.createElement(
             "div",
             { style: OauthWrap },
@@ -32,18 +47,23 @@ var App = React.createClass({
                 { style: OauthForm },
                 React.createElement(
                     "div",
-                    { id: "user-input" },
-                    React.createElement("input", { id: "OauthUser", className: "oauth-input", type: "text" }),
+                    { id: "user-input", className: userInputClass, className: "parent-div" },
                     React.createElement(
                         "label",
-                        { htmlFor: "OauthUser" },
+                        { htmlFor: "OauthUser", className: "oauth-label" },
                         "Username"
-                    )
+                    ),
+                    React.createElement("input", { id: "OauthUser", className: "oauth-input", type: "text", onChange: this._userInputChanged })
                 ),
                 React.createElement(
                     "div",
-                    { id: "key-input" },
-                    React.createElement("input", { id: "OauthKey", className: "oauth-input", type: "password" })
+                    { id: "key-input", className: keyInputClass, className: "parent-div" },
+                    React.createElement(
+                        "label",
+                        { htmlFor: "OauthKey", className: "oauth-label" },
+                        "Password"
+                    ),
+                    React.createElement("input", { id: "OauthKey", className: "oauth-input", type: "password", onChange: this._keyInputChanged })
                 ),
                 React.createElement(
                     "div",
@@ -56,8 +76,30 @@ var App = React.createClass({
                 )
             )
         );
+    },
+
+    _userInputChanged: function _userInputChanged(e) {
+        var completed = e.target.value.length > 0;
+
+        this.setState({ userIsCompleted: completed });
+    },
+
+    _keyInputChanged: function _keyInputChanged(e) {
+        var completed = e.target.value.length > 0;
+
+        this.setState({ keyIsCompleted: completed });
     }
 
 });
+
+//$(".oauth-input").focus(function(){
+//    $(this).parent().addClass("is-active is-completed");
+//});
+//
+//$(".oauth-input").focusout(function(){
+//    if($(this).val() === "")
+//        $(this).parent().removeClass("is-completed");
+//    $(this).parent().removeClass("is-active");
+//})
 
 //# sourceMappingURL=app-compiled.js.map
