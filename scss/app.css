@@ -60,10 +60,10 @@ input:focus {
 .is-active::after {
   transform: scaleX(1); }
 
-.is-active .mat-label {
+.is-active .oauth-label {
   color: #55acee; }
 
-.is-completed .mat-label {
+.is-completed .oauth-label {
   font-size: 12px;
   transform: translateY(0); }
 

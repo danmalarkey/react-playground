@@ -92,6 +92,17 @@ var App = React.createClass({
 
 });
 
+var userInputField = document.getElementById("oauth-user");
+var keyInputField = document.getElementById("oauth-key");
+
+function showAlert() {
+    alert("hello");
+}
+
+userInputField.onclick = function () {
+    showAlert();
+};
+
 //$(".oauth-input").focus(function(){
 //    $(this).parent().addClass("is-active is-completed");
 //});
