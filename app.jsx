@@ -80,9 +80,86 @@ function showAlert() {
 
 userInputField.onclick = function() {
     showAlert();
-}
+};
 
 
+var MagicInput = React.createClass({
+
+    getInitialState() {
+        return {
+            focused: false
+        }
+    },
+
+    render() {
+
+        var className = 'parent-div';
+
+        if(this.state.focused) {
+            className += ' is-active is-completed';
+        }
+
+        return (
+            <div id="key-input" className={className}>
+                <label htmlFor="OauthKey" className="oauth-label">Password</label>
+                <input className="oauth-input" ref="inputValue" onChange={this.onChange}/>
+            </div>
+        )
+    },
+
+    onChange() {
+        var inputValue = React.findDOMNode(this.refs.inputValue).value;
+        this.props.onInputChanged(inputValue);
+    },
+
+    onFocus() {
+        this.setState({
+            focused: true
+        });
+    },
+
+    onBlur() {
+        this.setState({
+            focused: false
+        });
+    }
+});
+
+
+var Parent = React.createClass({
+
+    getInitialState() {
+        return {
+            firstValue: '',
+            secondValue: ''
+        }
+    },
+
+    render() {
+        return (
+            <div className="oauth-wrap">
+                <div className="oauth-form">
+                    <MagicInput inputValue={this.state.firstValue} onInputChanged={this.firstInputChanged} propertyNane="Something"/>
+                    <MagicInput inputValue={this.state.secondValue} onInputChanged={this.secondInputChanged}/>
+                </div>
+            </div>
+        )
+    },
+
+    firstInputChanged(newValue) {
+        this.setState({
+            firstValue: newValue
+        });
+    },
+
+    secondInputChanged(newValue) {
+        this.setState({
+            secondValue: newValue
+        });
+    }
+});
+
+React.render(React.createElement(Parent), document.getElementById('container'));
 
 //$(".oauth-input").focus(function(){
 //    $(this).parent().addClass("is-active is-completed");
