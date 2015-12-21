@@ -15,6 +15,10 @@ input:focus {
     border-color: red;
 }
 
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -198,7 +202,7 @@ body {
 .product-card {
     background-color: #fff;
     height: auto;
-    width: 75vw;
+    width: 85vw;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
     align-self: center;
     padding: 5%;
@@ -248,4 +252,105 @@ body {
 
 .product-title {
     color: #555;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.quant-price {
+    display: flex;
+}
+
+.product-quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quant-controls {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.quant-inc,
+.quant-dec {
+    cursor: pointer;
+    margin: -4px 0;
+    color: #ccc
+}
+
+.quant-inc:hover,
+.quant-dec:hover {
+    color: #fa633b;
+    cursor: pointer;
+}
+
+.quant-inc,
+.quant-dec,
+.quant-inc:hover,
+.quant-dec:hover {
+    transition: all .25s ease;
+}
+
+.quant-total {
+    font-size: 2rem;
+    margin-right: .5rem;
+    font-weight: 100;
+    color: #fa633b;
+}
+
+.product-quant {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.total-amount {
+    font-size: 2rem;
+}
+
+
+
+.desc-nav {
+    margin-top: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .5rem;
+    margin-top: 3rem;
+}
+
+.desc-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: all .25s cubic-bezier(.17,.67,.83,.67);
+}
+
+.desc-nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all .25s cubic-bezier(.17,.67,.83,.67);
+
+    &.active,
+    &:hover {
+        color: #333;
+        border-bottom: 3px solid #333;
+        padding-bottom: 8px;
+        transition: all .25s cubic-bezier(.17,.67,.83,.67);
+    }
+}
+
+
+
+.btn {
+    padding: 6px 12px;
+    display: inline-block;
+    background-color: #A2D729;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
 }

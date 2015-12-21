@@ -108,7 +108,14 @@ var ProductCard = React.createClass({
             React.createElement(
                 "div",
                 { className: "rightside" },
-                React.createElement(ProductTitle, null)
+                React.createElement(ProductTitle, null),
+                React.createElement(
+                    "div",
+                    { className: "quant-price" },
+                    React.createElement(ProductQuantity, null)
+                ),
+                React.createElement(DescNav, null),
+                React.createElement(BuyBtn, null)
             )
         );
     }
@@ -161,6 +168,100 @@ var ProductTitle = React.createClass({
         );
     }
 
+});
+
+var ProductQuantity = React.createClass({
+    displayName: "ProductQuantity",
+
+    render: function render() {
+        return React.createElement(
+            "div",
+            { className: "product-quantity" },
+            React.createElement(
+                "div",
+                { className: "product-quant" },
+                React.createElement(
+                    "div",
+                    { className: "quant-total" },
+                    "1"
+                ),
+                React.createElement(
+                    "div",
+                    { className: "quant-controls" },
+                    React.createElement("span", { className: "fa fa-caret-up quant-inc" }),
+                    React.createElement("span", { className: "fa fa-caret-down quant-dec" })
+                )
+            ),
+            React.createElement(
+                "div",
+                { className: "total-amount" },
+                "$289.99"
+            )
+        );
+    }
+});
+
+var DescNav = React.createClass({
+    displayName: "DescNav",
+
+    render: function render() {
+        return React.createElement(
+            "div",
+            { className: "details-wrap" },
+            React.createElement(
+                "ul",
+                { className: "desc-nav" },
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#", className: "active" },
+                        "Description"
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#" },
+                        "Details"
+                    )
+                ),
+                React.createElement(
+                    "li",
+                    null,
+                    React.createElement(
+                        "a",
+                        { href: "#" },
+                        "Specifications"
+                    )
+                )
+            ),
+            React.createElement(
+                "p",
+                null,
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nostrum quas rem soluta! A, alias amet corporis ea eos exercitationem, fuga ipsam magnam minus quam qui quo quos similique totam."
+            )
+        );
+    }
+});
+
+var BuyBtn = React.createClass({
+    displayName: "BuyBtn",
+
+    render: function render() {
+        return React.createElement(
+            "div",
+            { className: "buy-btn" },
+            React.createElement(
+                "a",
+                { href: "#", className: "btn" },
+                "Purchase Chair"
+            )
+        );
+    }
 });
 
 React.render(React.createElement(ProductCard), document.getElementById('container'));

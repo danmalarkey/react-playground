@@ -102,6 +102,11 @@ var ProductCard = React.createClass({
                 </div>
                 <div className="rightside">
                     <ProductTitle />
+                    <div className="quant-price">
+                        <ProductQuantity />
+                    </div>
+                    <DescNav />
+                    <BuyBtn />
                 </div>
             </div>
         )
@@ -154,6 +159,53 @@ var ProductTitle = React.createClass({
 
 });
 
+var ProductQuantity = React.createClass({
+
+    render() {
+        return (
+            <div className="product-quantity">
+                <div className="product-quant">
+                    <div className="quant-total">
+                        1
+                    </div>
+                    <div className="quant-controls">
+                        <span className="fa fa-caret-up quant-inc"></span>
+                        <span className="fa fa-caret-down quant-dec"></span>
+                    </div>
+                </div>
+                <div className="total-amount">$289.99</div>
+            </div>
+        )
+    }
+});
+
+var DescNav = React.createClass({
+    render() {
+        return (
+            <div className="details-wrap">
+                <ul className="desc-nav">
+                    <li><a href="#" className="active">Description</a></li>
+                    <li><a href="#">Details</a></li>
+                    <li><a href="#">Specifications</a></li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nostrum quas rem soluta! A, alias amet corporis ea eos
+                    exercitationem, fuga ipsam magnam minus quam qui quo quos similique totam.
+                </p>
+            </div>
+        )
+    }
+});
+
+var BuyBtn = React.createClass({
+    render() {
+        return (
+            <div className="buy-btn">
+                <a href="#" className="btn">Purchase Chair</a>
+            </div>
+        )
+    }
+});
 
 
 React.render(React.createElement(ProductCard), document.getElementById('container'));
