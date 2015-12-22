@@ -1,90 +1,17 @@
-//var App = React.createClass({
-//
-//    getInitialState() {
-//        return {
-//            userIsCompleted: false,
-//            keyIsCompleted: false
-//        };
-//    },
-//
-//    render() {
-//
-//        var OauthWrap = {
-//            display:                 "flex",
-//            height:                  "100vh",
-//            width:                   "100vw",
-//            justifyContent:          "center"
-//        };
-//
-//        var OauthForm = {
-//            width:                  "400",
-//            backgroundColor:        "#fff",
-//            display:                "flex",
-//            flexDirection:          "column",
-//            border:                 "1px solid #eee",
-//            borderRadius:           "2px",
-//            margin:                 "auto",
-//            padding:                "2rem",
-//            boxShadow:              "0 1px 3px rgba(0, 0, 0, .04)"
-//        };
-//
-//        var userInputClass = '';
-//
-//        if (this.state.userIsCompleted)
-//            userInputClass += 'is-completed';
-//
-//        var keyInputClass = '';
-//
-//        if (this.state.keyIsCompleted)
-//            keyInputClass += 'is-completed';
-//
-//        return (
-//            <div style={OauthWrap}>
-//                <div style={OauthForm}>
-//                    <div id="user-input" className={userInputClass} className="parent-div">
-//                        <label htmlFor="OauthUser" className="oauth-label">Username</label>
-//                        <input id="OauthUser" className="oauth-input" type="text" onChange={this._userInputChanged}
-// />
-//                    </div>
-//                    <div id="key-input" className={keyInputClass} className="parent-div">
-//                        <label htmlFor="OauthKey" className="oauth-label">Password</label>
-//                        <input id="OauthKey" className="oauth-input" type="password" onChange={this._keyInputChanged}
-// /> </div> <div id="submit-btn"> <button id="OauthBtn" className="oauth-btn" type="button">Let Me In</button> </div>
-// </div> </div> ) },  _userInputChanged(e) { var completed = e.target.value.length > 0;  this.setState({
-// userIsCompleted: completed }); },  _keyInputChanged(e) { var completed = e.target.value.length > 0;  this.setState({
-// keyIsCompleted: completed }); }  });  var userInputField = document.getElementById("oauth-user"); var keyInputField
-// = document.getElementById("oauth-key");  function showAlert() { alert("hello"); }  userInputField.onclick =
-// function() { showAlert(); };   var MagicInput = React.createClass({  getInitialState() { return { focused: false }
-// },  render() {  var className = 'parent-div';  if(this.state.focused) { className += ' is-active is-completed'; } 
-// return ( <div id="key-input" className={className}> <label htmlFor="OauthKey"
-// className="oauth-label">Password</label> <input className="oauth-input" ref="inputValue" onChange={this.onChange}/>
-// </div> ) },  onChange() { var inputValue = React.findDOMNode(this.refs.inputValue).value;
-// this.props.onInputChanged(inputValue); },  onFocus() { this.setState({ focused: true }); },  onBlur() {
-// this.setState({ focused: false }); } });   var Parent = React.createClass({  getInitialState() { return {
-// firstValue: '', secondValue: '' } },  render() { return ( <div className="oauth-wrap"> <div className="oauth-form">
-// <MagicInput inputValue={this.state.firstValue} onInputChanged={this.firstInputChanged} propertyNane="Something"/>
-// <MagicInput inputValue={this.state.secondValue} onInputChanged={this.secondInputChanged}/> </div> </div> ) },
-// firstInputChanged(newValue) { this.setState({ firstValue: newValue }); },  secondInputChanged(newValue) {
-// this.setState({ secondValue: newValue }); } });  React.render(React.createElement(Parent),
-// document.getElementById('container'));
+String.prototype.reverse=function(){
+    return this.split("").reverse().join("");
+};
+Number.prototype.withCommas=function(){
+    var x=6,
+        y=parseFloat(this).toFixed(2).toString().reverse();
 
-// ========================================================================================
-//
-// Jquery working version
-//
-// ========================================================================================
+    while(x < y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}
+    return y.reverse();
+};
+Number.prototype.toCurrency=function(){
+    return(arguments[0]?arguments[0]:"$")+this.withCommas();
+};
 
-//$(".oauth-input").focus(function(){
-//    $(this).parent().addClass("is-active is-completed");
-//});
-//
-//$(".oauth-input").focusout(function(){
-//    if($(this).val() === "")
-//        $(this).parent().removeClass("is-completed");
-//    $(this).parent().removeClass("is-active");
-//})
-
-// ========================================================================================
 
 
 // CARD DESIGN:
@@ -92,13 +19,23 @@
 // Design a product card of a piece of furniture
 
 var ProductCard = React.createClass({
-
+    getInitialState: function () {
+        return {
+            selectedImageIndex: 0
+        }
+    },
     render() {
+        var imgs = [
+            "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1",
+            "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1",
+            "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1"
+        ];
+
         return (
             <div className="product-card">
                 <div className="leftside">
-                    <ProductImage />
-                    <ImageNavDots />
+                    <ProductImage imgs={imgs} />
+                    <ImageNavDots imgCount={imgs.length} selectedImageIndex={this.state.selectedImageIndex} />
                 </div>
                 <div className="rightside">
                     <ProductTitle />
@@ -122,7 +59,9 @@ var ProductImage = React.createClass({
     render() {
         return (
             <div className="product-image">
-                <img className="main-thumbnail" src="http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1" alt=""/>
+                {this.props.imgs.map(imgUrl =>
+                    <img className="main-thumbnail" src={imgUrl} alt=""/>
+                )}
             </div>
         )
     }
@@ -135,12 +74,14 @@ var ProductImage = React.createClass({
 var ImageNavDots = React.createClass({
 
     render() {
+        var listItems = [];
+        for(var i = 0; i < this.props.imgCount; i++) {
+            listItems.push(<li key={i} className={this.props.selectedImageIndex === i ? "img-nav-dot-isactive" : ""}></li>);
+        }
+
         return (
             <ul className="img-nav-dots">
-                <li className="img-nav-dot-isactive"></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                {listItems}
             </ul>
         )
     }
@@ -160,22 +101,51 @@ var ProductTitle = React.createClass({
 });
 
 var ProductQuantity = React.createClass({
-
+    getDefaultProps: function() {
+        return {
+            maxCount: 20
+        }
+    },
     render() {
         return (
             <div className="product-quantity">
                 <div className="product-quant">
                     <div className="quant-total">
-                        1
+                        {this.state.value}
                     </div>
                     <div className="quant-controls">
-                        <span className="fa fa-caret-up quant-inc"></span>
-                        <span className="fa fa-caret-down quant-dec"></span>
+                        <span className="fa fa-caret-up quant-inc" onClick={this.decQuantity}></span>
+                        <span className="fa fa-caret-down quant-dec" onClick={this.incQuantity}></span>
                     </div>
                 </div>
-                <div className="total-amount">$289.99</div>
+                <div className="total-amount">{(this.state.price * this.state.value).toCurrency()}</div>
             </div>
         )
+    },
+
+    getInitialState: function() {
+        return {
+            value: 1,
+            price: 289.99
+        };
+    },
+
+    decQuantity: function() {
+        if (this.state.value < this.props.maxCount) {
+
+            this.setState({
+                value: this.state.value + 1
+            });
+        }
+    },
+
+    incQuantity: function() {
+        if (this.state.value > 1) {
+
+            this.setState({
+                value: this.state.value - 1
+            });
+        }
     }
 });
 
