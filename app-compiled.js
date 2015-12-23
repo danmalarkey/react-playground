@@ -16,10 +16,6 @@ Number.prototype.toCurrency = function () {
     return (arguments[0] ? arguments[0] : "$") + this.withCommas();
 };
 
-// CARD DESIGN:
-
-// Design a product card of a piece of furniture
-
 var ProductCard = React.createClass({
     displayName: "ProductCard",
 
@@ -29,6 +25,11 @@ var ProductCard = React.createClass({
         };
     },
     render: function render() {
+
+        //var ProductWindow = document.getElementById("product-window").offsetHeight;
+        //
+        //alert(ProductWindow);
+
         var imgs = ["http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1", "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1", "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1"];
 
         return React.createElement(
@@ -66,10 +67,14 @@ var ProductImage = React.createClass({
     render: function render() {
         return React.createElement(
             "div",
-            { className: "product-image" },
-            this.props.imgs.map(function (imgUrl) {
-                return React.createElement("img", { className: "main-thumbnail", src: imgUrl, alt: "" });
-            })
+            { id: "product-window", className: "product-image" },
+            React.createElement(
+                "div",
+                { className: "product-image-wrapper" },
+                this.props.imgs.map(function (imgUrl) {
+                    return React.createElement("img", { className: "main-thumbnail", src: imgUrl, alt: "" });
+                })
+            )
         );
     }
 
@@ -227,7 +232,8 @@ var BuyBtn = React.createClass({
             React.createElement(
                 "a",
                 { href: "#", className: "btn" },
-                "Purchase Chair"
+                "Buy Now ",
+                React.createElement("span", { className: "fa fa-chevron-right buy-btn-arrow" })
             )
         );
     }

@@ -87,6 +87,16 @@ ul, ol {
     margin-bottom: 3rem;
 }
 
+.product-image-wrapper {
+    width: 100%;
+    display: block;
+}
+
+.product-image-wrapper img {
+    display: inline-block;
+    float: left;
+}
+
 .product-image {
     overflow: hidden;
     height: 480px;
@@ -155,7 +165,6 @@ ul, ol {
 
 
 .desc-nav {
-    margin-top: 2rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: .5rem;
     margin-top: 3rem;
@@ -171,7 +180,7 @@ ul, ol {
     text-decoration: none;
     transition: all .25s ease;
     border-bottom: 3px solid transparent;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 
     &.active,
     &:hover {
@@ -204,4 +213,8 @@ ul, ol {
     &:active {
         box-shadow: inset 0px 6px 6px rgba(0, 0, 0, .10);
     }
+}
+
+.buy-btn-arrow {
+    margin-left: 8px;
 }

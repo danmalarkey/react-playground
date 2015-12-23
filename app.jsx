@@ -14,22 +14,28 @@ Number.prototype.toCurrency=function(){
 
 
 
-// CARD DESIGN:
 
-// Design a product card of a piece of furniture
 
 var ProductCard = React.createClass({
+
     getInitialState: function () {
         return {
             selectedImageIndex: 0
         }
     },
     render() {
+
+        //var ProductWindow = document.getElementById("product-window").offsetHeight;
+        //
+        //alert(ProductWindow);
+
         var imgs = [
             "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1",
             "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1",
             "http://www.specsserver.com/CACHE/FRTWEMFYUDTH.JPG?width=800&height=-1"
         ];
+
+
 
         return (
             <div className="product-card">
@@ -58,10 +64,12 @@ var ProductImage = React.createClass({
 
     render() {
         return (
-            <div className="product-image">
-                {this.props.imgs.map(imgUrl =>
-                    <img className="main-thumbnail" src={imgUrl} alt=""/>
-                )}
+            <div id="product-window" className="product-image">
+                <div className="product-image-wrapper">
+                    {this.props.imgs.map(imgUrl =>
+                        <img className="main-thumbnail" src={imgUrl} alt=""/>
+                    )}
+                </div>
             </div>
         )
     }
@@ -171,7 +179,7 @@ var BuyBtn = React.createClass({
     render() {
         return (
             <div className="buy-btn">
-                <a href="#" className="btn">Purchase Chair</a>
+                <a href="#" className="btn">Buy Now <span className="fa fa-chevron-right buy-btn-arrow"></span></a>
             </div>
         )
     }

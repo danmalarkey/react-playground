@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-compiled.js" afterPath="$PROJECT_DIR$/app-compiled.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-compiled.js.map" afterPath="$PROJECT_DIR$/app-compiled.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.jsx" afterPath="$PROJECT_DIR$/app.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.scss" afterPath="$PROJECT_DIR$/scss/app.scss" />
     </list>
@@ -31,28 +32,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.605263">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.31578946">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="2" selection-end-line="34" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+            <state vertical-scroll-proportion="4.337931">
+              <caret line="185" column="3" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45892993">
-              <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.31578946">
+              <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -62,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/scss/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+              <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,24 +73,24 @@
         <entry file="file://$PROJECT_DIR$/app-compiled.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+              <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
               <folding>
-                <marker date="1450801467000" expanded="true" signature="567:1889" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="751:1886" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="1893:2010" placeholder="//..." />
-                <marker date="1450801467000" expanded="true" signature="2048:2407" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="2114:2404" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="2411:2534" placeholder="//..." />
-                <marker date="1450801467000" expanded="true" signature="2572:3018" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="2638:3015" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="3059:3303" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="3125:3300" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="3347:5017" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="3526:5015" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="5053:6494" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="5114:6492" placeholder="{...}" />
-                <marker date="1450801467000" expanded="true" signature="6529:6852" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
-                <marker date="1450801467000" expanded="true" signature="6589:6850" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="500:1953" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="684:1950" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="1957:2074" placeholder="//..." />
+                <marker date="1450816868000" expanded="true" signature="2112:2631" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="2178:2628" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="2635:2758" placeholder="//..." />
+                <marker date="1450816868000" expanded="true" signature="2796:3242" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="2862:3239" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="3283:3527" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="3349:3524" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="3571:5241" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="3750:5239" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="5277:6718" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="5338:6716" placeholder="{...}" />
+                <marker date="1450816868000" expanded="true" signature="6753:7167" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
+                <marker date="1450816868000" expanded="true" signature="6813:7165" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,9 +113,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app-compiled.js" />
+        <option value="$PROJECT_DIR$/scss/app.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.jsx" />
-        <option value="$PROJECT_DIR$/scss/app.scss" />
       </list>
     </option>
   </component>
@@ -129,10 +130,8 @@
     </order>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-149" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -300,10 +299,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-149" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09335937" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18671875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -374,22 +373,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding>
-            <marker date="1450801467000" expanded="true" signature="567:1889" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="751:1886" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="1893:2010" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2048:2407" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2114:2404" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="2411:2534" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2572:3018" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2638:3015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3059:3303" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3125:3300" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3347:5017" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3526:5015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="5053:6494" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="5114:6492" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="6529:6852" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="6589:6850" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="500:1953" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="684:1950" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="1957:2074" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2112:2631" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2178:2628" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="2635:2758" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2796:3242" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2862:3239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3283:3527" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3349:3524" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3571:5241" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3750:5239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="5277:6718" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="5338:6716" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="6753:7167" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="6813:7165" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -423,22 +422,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
-            <marker date="1450801467000" expanded="true" signature="567:1889" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="751:1886" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="1893:2010" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2048:2407" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2114:2404" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="2411:2534" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2572:3018" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2638:3015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3059:3303" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3125:3300" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3347:5017" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3526:5015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="5053:6494" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="5114:6492" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="6529:6852" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="6589:6850" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="500:1953" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="684:1950" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="1957:2074" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2112:2631" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2178:2628" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="2635:2758" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2796:3242" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2862:3239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3283:3527" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3349:3524" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3571:5241" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3750:5239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="5277:6718" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="5338:6716" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="6753:7167" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="6813:7165" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -472,22 +471,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
-            <marker date="1450801467000" expanded="true" signature="567:1889" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="751:1886" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="1893:2010" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2048:2407" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2114:2404" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="2411:2534" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2572:3018" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2638:3015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3059:3303" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3125:3300" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3347:5017" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3526:5015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="5053:6494" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="5114:6492" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="6529:6852" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="6589:6850" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="500:1953" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="684:1950" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="1957:2074" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2112:2631" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2178:2628" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="2635:2758" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2796:3242" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2862:3239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3283:3527" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3349:3524" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3571:5241" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3750:5239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="5277:6718" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="5338:6716" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="6753:7167" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="6813:7165" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -513,7 +512,7 @@
     <entry file="file://$PROJECT_DIR$/scss/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -521,48 +520,48 @@
     <entry file="file://$PROJECT_DIR$/app-compiled.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
           <folding>
-            <marker date="1450801467000" expanded="true" signature="567:1889" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="751:1886" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="1893:2010" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2048:2407" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2114:2404" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="2411:2534" placeholder="//..." />
-            <marker date="1450801467000" expanded="true" signature="2572:3018" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="2638:3015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3059:3303" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3125:3300" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="3347:5017" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="3526:5015" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="5053:6494" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="5114:6492" placeholder="{...}" />
-            <marker date="1450801467000" expanded="true" signature="6529:6852" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
-            <marker date="1450801467000" expanded="true" signature="6589:6850" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="500:1953" placeholder="{&quot;displayName&quot;: &quot;ProductCard&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="684:1950" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="1957:2074" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2112:2631" placeholder="{&quot;displayName&quot;: &quot;ProductImage&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2178:2628" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="2635:2758" placeholder="//..." />
+            <marker date="1450816868000" expanded="true" signature="2796:3242" placeholder="{&quot;displayName&quot;: &quot;ImageNavDots&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="2862:3239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3283:3527" placeholder="{&quot;displayName&quot;: &quot;ProductTitle&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3349:3524" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="3571:5241" placeholder="{&quot;displayName&quot;: &quot;ProductQuantity&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="3750:5239" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="5277:6718" placeholder="{&quot;displayName&quot;: &quot;DescNav&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="5338:6716" placeholder="{...}" />
+            <marker date="1450816868000" expanded="true" signature="6753:7167" placeholder="{&quot;displayName&quot;: &quot;BuyBtn&quot;...}" />
+            <marker date="1450816868000" expanded="true" signature="6813:7165" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31578946">
+          <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.605263">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.31578946">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="2" selection-end-line="34" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45892993">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        <state vertical-scroll-proportion="4.337931">
+          <caret line="185" column="3" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
           <folding />
         </state>
       </provider>
